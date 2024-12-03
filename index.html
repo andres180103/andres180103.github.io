@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click&Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Click&Shop</h1>
+    <nav>
+      <button id="registerBtn">Registro/Iniciar Sesión</button>
+      <input type="text" id="searchBar" placeholder="Búsqueda básica...">
+      <button id="searchBtn">Buscar</button>
+      <select id="advancedSearch">
+        <option value="">Búsqueda avanzada</option>
+        <option value="categoria">Categoría</option>
+        <option value="precio">Precio</option>
+        <option value="stock">Disponibilidad</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section id="catalog">
+      <h2>Catálogo de Productos</h2>
+      <div id="productGrid"></div>
+    </section>
+
+    <section id="cart">
+      <h2>Carrito de Compras</h2>
+      <ul id="cartItems"></ul>
+      <p>Total: $<span id="cartTotal">0.00</span></p>
+      <button id="checkoutBtn">Pagar</button>
+    </section>
+  </main>
+
+  <!-- Modal de Registro -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Registro / Inicio de Sesión</h2>
+      <input type="text" id="username" placeholder="Usuario">
+      <input type="password" id="password" placeholder="Contraseña">
+      <button id="loginBtn">Iniciar Sesión</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
